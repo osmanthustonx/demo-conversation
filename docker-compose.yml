@@ -1,0 +1,12 @@
+version: '3'
+services:
+  bot:
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - cash
+networks:
+  cash:
+    external: true
